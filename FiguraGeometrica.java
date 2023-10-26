@@ -8,6 +8,7 @@ class FiguraGeometrica {
     private String nombre;
     private String color;
 
+
     /**
      * Constructor de la clase.
      *
