@@ -11,7 +11,7 @@ public class Principal {
      */
     public static void main(String[] args) {
         System.out.println("\n");
-Circulo circulo= new Circulo( "Circulo", "Azul",15);
+        Circulo circulo= new Circulo( "Circulo", "Azul",15);
 circulo.obtenerArea();
 circulo.obtenerPerimetro();
 System.out.println("\n");
