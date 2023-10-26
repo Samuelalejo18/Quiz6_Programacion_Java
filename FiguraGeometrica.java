@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.awt.geom.Area;
+
 /**
  * Clase para una Figura Geometrica
  */
@@ -10,27 +11,35 @@ class FiguraGeometrica {
     /**
      * Constructor de la clase.
      *
-     * @param nombre nombre de la prenda
+     * @param nombre nombre del triangulo
 
-     * @param color color de la prenda
+     * @param color color del triangulo
 
      *
      * Complejidad temporal: O(1) Tiempo constante.
      */
+
     public FiguraGeometrica(String nombre, String color) {
         this.nombre = nombre;
         this.color = color;
-
     }
-
     /**
-     * Método para obtener el precio de la prenda en formato de moneda colombiana.
-     *
-     * @return nombre de la prenda
+     * Método para imprimir en consola el nombre y color de la figura geometrica y obtener el Area
      *
      * Complejidad temporal: O(1) Tiempo constante.
      */
     public double obtenerArea() {
-return  obtenerArea();
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Color: " + color);
+        return 0.0;
+    }
+    /**
+     * Método para obtener el promedio de la figura geometrica
+     *
+     * Complejidad temporal: O(1) Tiempo constante.
+     */
+    public double obtenerPerimetro() {
+        return 0.0;
     }
 
+}

@@ -12,8 +12,8 @@ class Triangulo extends FiguraGeometrica {
      *
      * Complejidad temporal: O(1) Tiempo constante.
      */
-    public Triangulo(String nombre, double base, double altura) {
-        super(nombre);
+    public Triangulo( String nombre, String color, double base, double altura) {
+        super  (nombre, color);
         this.base = base;
         this.altura = altura;
     }
@@ -25,7 +25,10 @@ class Triangulo extends FiguraGeometrica {
      */
     @Override
     public double obtenerArea() {
-        return   (base * altura)/2;
+        super.obtenerArea();
+        double area=   (base * altura)/2;
+        System.out.println("Area: " + area);
+        return  area;
     }
     /**
      * Método para obtener el perimetro del Triangulo.
@@ -35,7 +38,11 @@ class Triangulo extends FiguraGeometrica {
      */
     @Override
     public double obtenerPerimetro() {
-
-        return  base*3;
+        super.obtenerPerimetro();
+        double catetoAdyacente= base/2;
+        double hipotenusa=  Math.sqrt((catetoAdyacente*catetoAdyacente)+(altura*altura));
+        double  perimetro= (catetoAdyacente+hipotenusa+altura)*2;
+        System.out.println("Perimetro: " +  perimetro);
+        return  perimetro;
     }
-}
+    }

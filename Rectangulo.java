@@ -13,8 +13,8 @@ class Rectangulo extends FiguraGeometrica {
      *
      * Complejidad temporal: O(1) Tiempo constante.
      */
-    public Rectangulo(String nombre, double lado1, double lado2) {
-        super(nombre);
+    public Rectangulo(  String nombre, String color, double lado1, double lado2) {
+        super  (nombre, color);
         this.lado1 = lado1;
         this.lado2 = lado2;
     }
@@ -26,7 +26,10 @@ class Rectangulo extends FiguraGeometrica {
      */
     @Override
     public double obtenerArea() {
-        return lado1 * lado2;
+        super.obtenerArea();
+        double area= lado1 * lado2;
+        System.out.println("Area: " + area);
+        return  area;
     }
     /**
      * Método para obtener el perimetro del Rectangulo.
@@ -36,6 +39,9 @@ class Rectangulo extends FiguraGeometrica {
      */
     @Override
     public double obtenerPerimetro() {
-        return 2 * (lado1 + lado2);
+        super.obtenerPerimetro();
+        double  perimetro= 2 * (lado1 + lado2);
+        System.out.println("Perimetro: " +  perimetro);
+        return  perimetro;
     }
 }
